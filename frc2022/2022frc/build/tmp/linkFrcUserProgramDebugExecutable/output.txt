@@ -1,0 +1,4 @@
+See file:///C:/Users/Build%20ADream/Desktop/frc2022/2022frc/build/tmp/linkFrcUserProgramDebugExecutable/output.txt for all output for linkFrcUserProgramDebugExecutable.
+linking frcUserProgram successful.
+
+Finished linkFrcUserProgramDebugExecutable, see full log file:///C:/Users/Build%20ADream/Desktop/frc2022/2022frc/build/tmp/linkFrcUserProgramDebugExecutable/output.txt.

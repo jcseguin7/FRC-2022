@@ -1,0 +1,118 @@
+See file:///C:/Users/Build%20ADream/Desktop/frc2022/2022frc/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramDebugExecutableFrcUserProgramCpp.
+compiling DriveSubsystem.cpp failed.
+In file included from C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\cpp\subsystems\DriveSubsystem.cpp:8:0:
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\include/subsystems/DriveSubsystem.h:24:38: error: 'Joystick' was not declared in this scope
+   void DriveJoystick(std::shared_ptr<Joystick> stick);
+                                      ^~~~~~~~
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\include/subsystems/DriveSubsystem.h:24:38: note: suggested alternative: 'obstack'
+   void DriveJoystick(std::shared_ptr<Joystick> stick);
+                                      ^~~~~~~~
+                                      obstack
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\include/subsystems/DriveSubsystem.h:24:46: error: template argument 1 is invalid
+   void DriveJoystick(std::shared_ptr<Joystick> stick);
+                                              ^
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\include/subsystems/DriveSubsystem.h:36:24: error: 'MotorControllerGroup' is not a member of 'frc'
+   std::shared_ptr<frc::MotorControllerGroup> motorControllerLeft{driveTalon1, driveTalon2} ;
+                        ^~~~~~~~~~~~~~~~~~~~
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\include/subsystems/DriveSubsystem.h:36:24: note: suggested alternative: 'SpeedControllerGroup'
+   std::shared_ptr<frc::MotorControllerGroup> motorControllerLeft{driveTalon1, driveTalon2} ;
+                        ^~~~~~~~~~~~~~~~~~~~
+                        SpeedControllerGroup
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\include/subsystems/DriveSubsystem.h:36:44: error: template argument 1 is invalid
+   std::shared_ptr<frc::MotorControllerGroup> motorControllerLeft{driveTalon1, driveTalon2} ;
+                                            ^
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\include/subsystems/DriveSubsystem.h:37:24: error: 'MotorControllerGroup' is not a member of 'frc'
+   std::shared_ptr<frc::MotorControllerGroup> motorControllerRight{driveTalon3, driveTalon4} ;
+                        ^~~~~~~~~~~~~~~~~~~~
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\include/subsystems/DriveSubsystem.h:37:24: note: suggested alternative: 'SpeedControllerGroup'
+   std::shared_ptr<frc::MotorControllerGroup> motorControllerRight{driveTalon3, driveTalon4} ;
+                        ^~~~~~~~~~~~~~~~~~~~
+                        SpeedControllerGroup
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\include/subsystems/DriveSubsystem.h:37:44: error: template argument 1 is invalid
+   std::shared_ptr<frc::MotorControllerGroup> motorControllerRight{driveTalon3, driveTalon4} ;
+                                            ^
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\include/subsystems/DriveSubsystem.h:36:90: error: cannot convert '<brace-enclosed initializer list>' to 'int' in initialization
+   std::shared_ptr<frc::MotorControllerGroup> motorControllerLeft{driveTalon1, driveTalon2} ;
+                                                                                          ^
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\include/subsystems/DriveSubsystem.h:37:91: error: cannot convert '<brace-enclosed initializer list>' to 'int' in initialization
+   std::shared_ptr<frc::MotorControllerGroup> motorControllerRight{driveTalon3, driveTalon4} ;
+                                                                                           ^
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\cpp\subsystems\DriveSubsystem.cpp: In constructor 'DriveSubsystem::DriveSubsystem()':
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\cpp\subsystems\DriveSubsystem.cpp:18:25: error: request for member 'reset' in '((DriveSubsystem*)this)->DriveSubsystem::motorControllerLeft', which is of non-class type 'int'
+     motorControllerLeft.reset(new frc::MotorControllerGroup(*driveTalon1, *driveTalon2)) ;
+                         ^~~~~
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\cpp\subsystems\DriveSubsystem.cpp:18:35: error: expected type-specifier
+     motorControllerLeft.reset(new frc::MotorControllerGroup(*driveTalon1, *driveTalon2)) ;
+                                   ^~~
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\cpp\subsystems\DriveSubsystem.cpp:19:26: error: request for member 'reset' in '((DriveSubsystem*)this)->DriveSubsystem::motorControllerRight', which is of non-class type 'int'
+     motorControllerRight.reset(new frc::MotorControllerGroup(*driveTalon3, *driveTalon4)) ;
+                          ^~~~~
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\cpp\subsystems\DriveSubsystem.cpp:19:36: error: expected type-specifier
+     motorControllerRight.reset(new frc::MotorControllerGroup(*driveTalon3, *driveTalon4)) ;
+                                    ^~~
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\cpp\subsystems\DriveSubsystem.cpp:21:57: error: invalid type argument of unary '*' (have 'int')
+     differentialDrive.reset(new frc::DifferentialDrive(*motorControllerLeft, *motorControllerRight)) ;
+                                                         ^~~~~~~~~~~~~~~~~~~
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\cpp\subsystems\DriveSubsystem.cpp:21:79: error: invalid type argument of unary '*' (have 'int')
+     differentialDrive.reset(new frc::DifferentialDrive(*motorControllerLeft, *motorControllerRight)) ;
+                                                                               ^~~~~~~~~~~~~~~~~~~~
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\cpp\subsystems\DriveSubsystem.cpp: At global scope:
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\cpp\subsystems\DriveSubsystem.cpp:31:52: error: 'Joystick' was not declared in this scope
+ void DriveSubsystem::DriveJoystick(std::shared_ptr<Joystick> stick) {
+                                                    ^~~~~~~~
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\cpp\subsystems\DriveSubsystem.cpp:31:52: note: suggested alternative: 'obstack'
+ void DriveSubsystem::DriveJoystick(std::shared_ptr<Joystick> stick) {
+                                                    ^~~~~~~~
+                                                    obstack
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\cpp\subsystems\DriveSubsystem.cpp:31:60: error: template argument 1 is invalid
+ void DriveSubsystem::DriveJoystick(std::shared_ptr<Joystick> stick) {
+                                                            ^
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\cpp\subsystems\DriveSubsystem.cpp: In member function 'void DriveSubsystem::DriveJoystick(int)':
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\cpp\subsystems\DriveSubsystem.cpp:32:43: error: base operand of '->' is not a pointer
+     differentialDrive -> ArcadeDrive(stick->GetY(), stick->GetX())
+                                           ^~
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\cpp\subsystems\DriveSubsystem.cpp:32:58: error: base operand of '->' is not a pointer
+     differentialDrive -> ArcadeDrive(stick->GetY(), stick->GetX())
+                                                          ^~
+
+compiling Robot.cpp failed.
+In file included from C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\include/Robot.h:15:0,
+                 from C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\cpp\Robot.cpp:8:
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\include/subsystems/DriveSubsystem.h:24:38: error: 'Joystick' was not declared in this scope
+   void DriveJoystick(std::shared_ptr<Joystick> stick);
+                                      ^~~~~~~~
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\include/subsystems/DriveSubsystem.h:24:38: note: suggested alternative: 'obstack'
+   void DriveJoystick(std::shared_ptr<Joystick> stick);
+                                      ^~~~~~~~
+                                      obstack
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\include/subsystems/DriveSubsystem.h:24:46: error: template argument 1 is invalid
+   void DriveJoystick(std::shared_ptr<Joystick> stick);
+                                              ^
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\include/subsystems/DriveSubsystem.h:36:24: error: 'MotorControllerGroup' is not a member of 'frc'
+   std::shared_ptr<frc::MotorControllerGroup> motorControllerLeft{driveTalon1, driveTalon2} ;
+                        ^~~~~~~~~~~~~~~~~~~~
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\include/subsystems/DriveSubsystem.h:36:24: note: suggested alternative: 'SpeedControllerGroup'
+   std::shared_ptr<frc::MotorControllerGroup> motorControllerLeft{driveTalon1, driveTalon2} ;
+                        ^~~~~~~~~~~~~~~~~~~~
+                        SpeedControllerGroup
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\include/subsystems/DriveSubsystem.h:36:44: error: template argument 1 is invalid
+   std::shared_ptr<frc::MotorControllerGroup> motorControllerLeft{driveTalon1, driveTalon2} ;
+                                            ^
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\include/subsystems/DriveSubsystem.h:37:24: error: 'MotorControllerGroup' is not a member of 'frc'
+   std::shared_ptr<frc::MotorControllerGroup> motorControllerRight{driveTalon3, driveTalon4} ;
+                        ^~~~~~~~~~~~~~~~~~~~
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\include/subsystems/DriveSubsystem.h:37:24: note: suggested alternative: 'SpeedControllerGroup'
+   std::shared_ptr<frc::MotorControllerGroup> motorControllerRight{driveTalon3, driveTalon4} ;
+                        ^~~~~~~~~~~~~~~~~~~~
+                        SpeedControllerGroup
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\include/subsystems/DriveSubsystem.h:37:44: error: template argument 1 is invalid
+   std::shared_ptr<frc::MotorControllerGroup> motorControllerRight{driveTalon3, driveTalon4} ;
+                                            ^
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\include/subsystems/DriveSubsystem.h:36:90: error: cannot convert '<brace-enclosed initializer list>' to 'int' in initialization
+   std::shared_ptr<frc::MotorControllerGroup> motorControllerLeft{driveTalon1, driveTalon2} ;
+                                                                                          ^
+C:\Users\Build ADream\Desktop\frc2022\2022frc\src\main\include/subsystems/DriveSubsystem.h:37:91: error: cannot convert '<brace-enclosed initializer list>' to 'int' in initialization
+   std::shared_ptr<frc::MotorControllerGroup> motorControllerRight{driveTalon3, driveTalon4} ;
+                                                                                           ^
+
+Finished compileFrcUserProgramDebugExecutableFrcUserProgramCpp, see full log file:///C:/Users/Build%20ADream/Desktop/frc2022/2022frc/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt.
